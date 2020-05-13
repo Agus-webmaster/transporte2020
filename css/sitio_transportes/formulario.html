@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <h2>Complete el formulario</h2>
+    <form action="" method="">
+        <div>
+            <label for="">Nombre1</label>
+            <input type="text" id="nombre" />
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido">
+        </div>
+        <div>
+            <input type="text" id="usuario" placeholder="Usuario">
+        </div>
+        <div>
+            <input type="password" id="contraseña" placeholder="contraseña">
+        </div>
+        <div>
+            <label for="">Sexo</label>
+                <ul>
+                    <li>
+                        <input type="radio" value="mujer" name="sexo">
+                        <label for="">Mujer</label>
+                    </li>
+                    <li>
+                        <input type="radio" value="hombre" name="sexo">
+                        <label for="">Hombre</label>
+                    </li>
+                </ul>
+        </div>
+        <div>
+            <label for="">Hobbies</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="hobbies[]" value="bailar">
+                        <label for="">Bailar</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hobbies[]" value="nadar">
+                        <label for="">nadar</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hobbies[]" value="correr">
+                        <label for="">correr</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="hobbies[]" value="cantar">
+                        <label for="">cantar</label>
+                    </li>
+                </ul>
+        </div>
+        <div>
+            <label for="">Titulo</label>
+            <select name="titulo" id="">
+                <option value="primario">Primario</option>
+                <option value="primario">Primario</option>
+                <option value="primario">Primario</option>
+                <option value="primario">Primario</option>
+                <option value="primario">Primario</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Comentarios</label>
+            <textarea name="" id=""></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="borrar">
+        </div>
+    </form>
+</body>
+</html>

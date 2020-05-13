@@ -1,0 +1,423 @@
+/*font-family: 'Open Sans', sans-serif;*/
+/*empieza base*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px; /*separacion entre linea y linea*/
+    }
+header {
+    background-color: blue;
+    padding: 1em 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 100;
+    display: inline-block;/*en linea con el logo*/
+    position: relative;
+    bottom: 0.8em;
+}
+
+nav {
+    background-color: tomato;
+    margin-bottom: 2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /*uno al lado de otro y q el click abarque todo*/
+    width: 16.3%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center; /*poner en el medio y el de abajo*/
+    display: block;
+    background-color: tomato;
+    padding: 0.2em 0.4em;
+}
+
+nav ul li a:hover {
+    background-color: violet;
+}
+
+footer {
+    background-color: wheat;
+    clear: both;
+    color: gray;
+    padding: 3em 0;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.holder{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 400;
+    color: violet;
+    margin: 0 0 1em;
+}
+
+.home_img{
+    clear: both;
+    margin-bottom: 1.5em;
+}
+
+.bienvenidos,
+.testimonios{
+    box-sizing: border-box; /*modifica el tamaño de la caja en base al
+    tamaño- borde-padding*/
+}
+
+.bienvenidos{
+    background-color: tomato;
+    width: 75%;
+    float: left;
+    padding-right: 2em;
+}
+
+.testimonios {
+    background-color: blue;
+    width: 25%;
+    float: right;
+}
+
+/*termina base base*/
+
+/* Inicio css nosotros*/
+.historia p {
+    font-size: 0.8em;
+}
+
+.persona{
+    width: 18%;
+    float: left;
+    margin-left: 2.25%;
+    border-radius: 0.25em;
+    border: 1px solid red;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+}
+
+.persona figure {
+    margin: 0.8em 0 1em;
+    text-align: center;
+}
+
+.persona figure img {
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.persona h5, .persona h6 {
+    text-align: center;
+    color: royalblue;
+    font-weight: normal;
+    margin: 0;
+}
+
+.persona h5 {
+    font-style: italic;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+}
+
+.persona p {
+    font-size: 0.7em;
+    color: gray;
+    margin: 0 1em 1em;
+}
+
+.persona:first-child{ /*first child y last child(pseudoclase para que queden las imagenes en linea)*/
+    margin-left: 0;
+}
+
+/*Inicio css de servicios*/
+.servicio {
+    border: 1px solid blueviolet;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.servicio figure {
+    display: inline-block;
+}
+
+.servicio figure img {
+    border-radius: 10px;
+}
+
+.servicio .info {
+    width: 75%;
+    background-color: chartreuse;
+}
+
+.servicio .info h4 {
+    color: cornflowerblue;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid blue;
+    padding-bottom: 0.5em;
+}
+
+.servicio .info p {
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+/*css imagenes a lado del texto entrelazado*/
+.servicio:nth-child(odd) figure{  /*impar*/
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+.servicio:nth-child(odd) .info{
+    float: right;
+}
+
+.servicio:nth-child(even) figure{ /*par*/
+    float: right;
+    margin: 0 0 0 1em;
+}
+
+.servicio:nth-child(even) .info{
+    float: left;
+}
+
+/*css galeria*/
+
+.galeria .foto {
+    float: left;
+    border: 1px solid white;
+    padding: 0.3em;
+    margin: 1px 0 1em 2.5%;
+    width: 18%;
+    box-sizing: border-box;
+}
+
+.galeria .foto img {
+    display: block;
+    width: 100%;
+}
+
+.galeria .foto:nth-child(5n+1) { /*vas sumando numeros para q elborde se mueva*/
+    margin-left: 0;
+    border-color: red;
+}
+
+/* css de contacto*/
+
+.columna {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.625em;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.columna.left{ /*el elemento tiene 2 clases*/
+    border-right: 1px solid black;
+}
+
+.formulario label {
+    vertical-align: top;
+    width: 30%;
+    display: inline-block;
+}
+
+.formulario input, .formulario textarea {
+    background-color: gray;
+    border-radius: 5px;
+    border: 1px solid rgb(151, 144, 144);
+    font-size: 0.8em;
+    padding: 0.4em 0.6em;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.formulario textarea {
+    height: 10em;
+    resize: none;
+}
+
+.formulario input[type="submit"]{
+    background-color: lightblue;
+    box-shadow: 0 0 10px black;
+    color: white;
+    font-size: 1em;
+    padding: 0.4em 2em;
+    width: auto;
+}
+
+.acciones {
+    text-align: center;
+}
+
+.columna.left ul li {
+    font-size: 0.8em;
+}
+
+
+
+/*media 768px*/
+@media screen and (max-width: 768px){
+    .holder {
+        max-width: 768px;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    nav ul li {
+        width: 16.1%;
+    }
+
+    .home .columna .bienvenidos,
+    .home .columna .testimonios {
+        width: 50%;
+    }
+
+    .nosotros .persona {
+        width: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .nosotros .persona:nth-child(3n+1) {
+        margin-left: 0;
+        border-color: royalblue;
+    }
+
+    .servicios .servicio figure,
+    .servicios .servicio .info {
+        box-sizing: border-box;
+    }
+    .servicios .servicio figure {
+        max-width: 22%;
+    }
+
+    .servicios .servicio figure img {
+        width: 100%;
+    }
+
+    .galeria .foto {
+        width: 24%;
+        margin: 1em 0 1em 1.3333%;
+        padding: 0.3em;
+    }
+    .galeria .foto:nth-child(5n+1) {  /*para que queden las imagenes 2 2 1*/
+        margin-left: 1.3333%;
+    }
+
+    .contacto .columna{
+        width: 100%;
+        float: none;
+        padding: 0 1em;
+    }
+
+    .contacto .columna.left {
+        border: none;
+    }
+}
+
+/*inicio css media 480px*/
+@media screen and (max-width: 480px) {
+    header .logo {
+        margin-left: 3em;
+        background-color: red;
+    }
+
+    header .logo h1 {
+        font-size: 2em;
+    }
+
+    nav .holder {
+        padding: 0;
+    }
+    nav ul li {
+        display: block;
+        width: auto;
+    }
+
+    .home .columnas .bienvenidos,
+    .home .columnas .testimonios {
+        clear: both;
+        width: auto;
+        float: none;
+        display: block;
+    }
+
+    .home .columnas .bienvenidos {
+        padding: 0.6em;
+    }
+    .home .columnas .bienvenidos p {
+        font-size: 1em;
+    }
+
+    .home .columnas .testimonios {
+        width: 50%;
+        margin: 0 auto;
+        min-width: 220px;
+    }
+
+    .nosotros .persona {
+        width: 48%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+
+    .nosotros .persona:nth-child(3n+1) {
+        margin-left: 2%;
+        margin-left: 0;
+        border-color: green;
+    }
+
+    .servicios .servicio figure,
+    .servicios .servicio .info {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    .servicios .servicio figure {
+        max-width: 100%;
+        margin: 0 0 1em 0;
+    }
+
+    .galeria .foto {
+        width: 30%;
+        margin: 1em 0 1em 3.3333%;
+        padding: 0.3em;
+        background-color: yellow;
+    }
+
+    .galeria .foto:nth-child(5n+1) {
+        margin-left: 3.3333%;
+    }
+    .galeria .foto:nth-child(4n+1) {
+        margin-left: 3.3333%;
+    }
+    .galeria .foto:nth-child(3n+1) {
+        margin-left: 0;
+    }
+}
